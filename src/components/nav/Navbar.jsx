@@ -40,9 +40,9 @@ export default function Navbar() {
   };
   return (
     <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100 bg-transparent  ">
-      <div className="flex flex-row container lg:py-2 flex-wrap items-center justify-between mx-auto md:px-32 py-2 text-white px-4">
+      <div className="flex flex-row container lg:py-2 flex-wrap items-center justify-between mx-auto lg:px-32 py-2 text-white px-4">
         <div>Logo</div>
-        <div className=" mobile-menu block md:hidden">
+        <div className=" mobile-menu block lg:hidden">
           {!navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(true)}
@@ -59,7 +59,7 @@ export default function Navbar() {
             </button>
           )}
         </div>
-        <div className="menu hidden md:block md:w-auto " id="navbar">
+        <div className="menu hidden lg:block md:w-auto " id="navbar">
           <ul className="flex p-4 md:p-0 md:flex-row  md:space-x-8 mt-0 text-white ">
             {navLinks.map((link, index) => (
               <li key={index}>
@@ -69,16 +69,18 @@ export default function Navbar() {
           </ul>
         </div>
         {!navbarOpen && (
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <div className="flex items-center justify-center ">
               <div className="mx-3 ">
                 <button className="p-4 mx-2  " onClick={ClickLoginBtn}>
-                  <h1 className="text-custom-gradient"> Login</h1>
+                  <h1 className="bg-gradient-to-r from-salmon to-medium-purple bg-clip-text text-transparent hover:text-white transition-all duration-300">
+                    Login
+                  </h1>
                 </button>
               </div>
               <div className="ml-3">
                 <button
-                  className="py-3  px-6 bg-custom-gradient  border border-white rounded-full"
+                  className="py-3 transition-all duration-300 px-6 bg-custom-gradient hover:text-black border border-white rounded-full"
                   onClick={ClickTaskBtn}
                 >
                   Task to Us

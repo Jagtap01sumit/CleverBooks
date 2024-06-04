@@ -1,12 +1,15 @@
 import "./App.css";
+
 import Home from "./pages/Home";
+import QuestionPage from "./pages/QuestionPage";
+import Client from "./sections/Client";
 
 function App() {
   return (
-    <div className="  bg-[#121212] w-full">
-      {/* <Navbar /> */}
+    <div className="  bg-white w-full">
       <Home />
-      {/* // </main> */}
+      <QuestionPage />
+      <Client />
     </div>
   );
 }

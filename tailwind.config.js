@@ -18,6 +18,9 @@ export default {
           backgroundImage:
             "linear-gradient(228deg, var(--salmon), var(--medium-purple))",
         },
+        colors: {
+          lavender: "#E6E6FA",
+        },
       },
     },
   },

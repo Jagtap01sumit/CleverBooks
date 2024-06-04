@@ -3,10 +3,7 @@ import React from "react";
 export default function Button({ title, btnFunc }) {
   return (
     <div>
-      <button
-        className="py-3  px-6 bg-custom-gradient  border border-white rounded-full"
-        onClick=""
-      >
+      <button className="rounded-full p-3 hover:ring-2 ring-salmon ring-opacity-0 transition-all duration-300 py-3 px-6 hover:bg-custom-gradient border border-custom-border">
         {title}
       </button>
     </div>

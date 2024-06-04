@@ -5,6 +5,7 @@
 :root {
   --salmon: #fa8072;
   --medium-purple: #9370db;
+  --lavender: #E6E6FA
 }
 
 .bg-hero {
@@ -15,4 +16,17 @@
   /* Adjust as needed */
   background-position: center;
   /* Adjust as needed */
+}
+
+.element {
+  background-color: var(--lavender);
+}
+
+.custom-border {
+  /* Define the gradient colors */
+  --border-gradient: linear-gradient(to right, var(--salmon), var(--medium-purple));
+
+  /* Apply the gradient border */
+  border-image: var(--border-gradient);
+  border-image-slice: 1;
 }
