@@ -11,6 +11,14 @@ export default {
         "custom-gradient":
           "linear-gradient(228deg, var(--salmon), var(--medium-purple))",
       },
+      textColor: {
+        "gradient-text": {
+          backgroundClip: "text",
+          textFillColor: "transparent",
+          backgroundImage:
+            "linear-gradient(228deg, var(--salmon), var(--medium-purple))",
+        },
+      },
     },
   },
   plugins: [],

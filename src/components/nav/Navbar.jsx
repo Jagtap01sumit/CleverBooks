@@ -40,7 +40,7 @@ export default function Navbar() {
   };
   return (
     <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100 bg-transparent  ">
-      <div className="flex flex-row container lg:py-2 flex-wrap items-center justify-between mx-auto md:px-40 py-2 text-white px-4">
+      <div className="flex flex-row container lg:py-2 flex-wrap items-center justify-between mx-auto md:px-32 py-2 text-white px-4">
         <div>Logo</div>
         <div className=" mobile-menu block md:hidden">
           {!navbarOpen ? (
