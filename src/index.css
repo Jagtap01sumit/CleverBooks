@@ -40,3 +40,25 @@
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
+
+/* FinalPage */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-container {
+  background: linear-gradient(114deg, #9f6eed, #fc907e, #9f6eed, #fc907e);
+
+  background-size: 600% 600%;
+  animation: gradient 20s ease infinite;
+}

@@ -12,10 +12,18 @@ const contentArray = [
       "https://cdn.prod.website-files.com/639b3e775b326dcf7cea3e70/63a48634ed59555eb9125770_samosa.svg",
     mainImg:
       "https://cdn.prod.website-files.com/639b3e775b326dcf7cea3e70/664ddc11c29c3652662f0739_samosa%20party%20image.webp",
+    card1: "upto 95%",
+    subcard1: "< 3%",
+    card2: "< 3%",
+    subcard2: "< 3%",
+    card3: "Read Story",
+    subcard3: "->",
   },
   {
     quote:
       "As Co-founders, we had zero clue on the real time stock levels in our warehouse. It felt like a battle to manually update invoices from EE to Zoho, so that at least some data points can be tracked.While we had already implemented Crest I had no clue that they could make this API integration work for us and exactly the way we wanted it to work. Thank you team Rahul Vishwakarma & Yogesh Byahatti for identifying the problem and being so quick with the solution, kudos to the amazing team you have.",
+    name: "Kirti Goel",
+
     position: "Co-founder, P-TAL",
     clientImg:
       "https://cdn.prod.website-files.com/639b3e775b326dcf7cea3e70/664ddd1080709540ff764308_P-Tal%20founder.jpg",
@@ -23,6 +31,8 @@ const contentArray = [
       "https://cdn.prod.website-files.com/639b3e775b326dcf7cea3e70/664d8f654c71b6204bdf301c_P%20TAL%20logo.svg",
     mainImg:
       "https://cdn.prod.website-files.com/639b3e775b326dcf7cea3e70/664c90f75b0f0e735016706b_P-tal-p-500.webp",
+    card1: "Automated Invoice Reconciliation",
+    card2: "Channel wise  Sales Classification",
   },
 ];
 
@@ -49,11 +59,24 @@ export default function AboutComp() {
     }, 300);
   };
 
-  const { quote, name, position, clientImg, logoImg, mainImg } =
-    contentArray[currentIndex];
+  const {
+    quote,
+    name,
+    position,
+    clientImg,
+    logoImg,
+    mainImg,
+    card1,
+    subcard1,
+    subcard2,
+    card2,
+    card3,
+
+    subcard3,
+  } = contentArray[currentIndex];
 
   return (
-    <div className="lg:px-32 h-min-screen flex-col flex md:flex-row">
+    <div className="lg:px-32 h-min-screen flex-col flex md:flex-row mt-[120px] mb-[120px]">
       <div
         className={`md:w-2/3 sm:w-full justify-between flex flex-col p-5 lg:p-0 lg:pr-10 h-auto transition-all duration-300 md:order-1 order-2 ${
           isTransitioning ? "fade-out" : "fade-in"
@@ -94,22 +117,24 @@ export default function AboutComp() {
         <div className="flex flex-col lg:flex-row w-full ">
           <div className=" w-full  lg:mr-5 lg:mt-5 lg:mb-5 lg:w-auto h-auto flex-col bg-purple-100 rounded-2xl flex items-center justify-center md:mr-3 px-5 py-2 lg:my-0 my-2">
             <h1 className="p-3 font-semibold text-4xl bg-gradient-to-r from-salmon to-medium-purple bg-clip-text text-transparent">
-              upto 95%
+              {card1}
             </h1>
-            <h1 className="p-3">Demand Fulfilment</h1>
+            <h1 className="p-3">{subcard1}</h1>
           </div>
           <div className="lg:w-auto  lg:m-5 w-full h-auto flex-col bg-purple-100 rounded-2xl flex items-center justify-center mr-3 px-9 py-2 my-2">
             <h1 className="p-3 font-semibold text-4xl bg-gradient-to-r from-salmon to-medium-purple bg-clip-text text-transparent  ">
-              {"<"} 3%
+              {card2}
             </h1>
-            <h1 className="p-3">Demand Fulfilment</h1>
+            <h1 className="p-3">{subcard2}</h1>
           </div>
-          <div className="lg:w-auto   w-full h-auto flex-col bg-purple-100 rounded-2xl flex items-center justify-center  px-9 lg:ml-5 lg:mt-5 lg:mb-5 lg:my-0 my-2">
-            <h1 className="p-3 font-semibold text-2xl bg-gradient-to-r from-salmon to-medium-purple bg-clip-text text-transparent  ">
-              Read stories
-            </h1>
-            <h1 className="p-3"> -{">"}</h1>
-          </div>
+          {card3 && (
+            <div className="lg:w-auto   w-full h-auto flex-col bg-purple-100 rounded-2xl flex items-center justify-center  px-9 lg:ml-5 lg:mt-5 lg:mb-5 lg:my-0 my-2">
+              <h1 className="p-3 font-semibold text-2xl bg-gradient-to-r from-salmon to-medium-purple bg-clip-text text-transparent  ">
+                {card3}
+              </h1>
+              <h1 className="p-3"> {subcard3}</h1>
+            </div>
+          )}
         </div>
       </div>
       <div
