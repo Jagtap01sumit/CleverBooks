@@ -1,6 +1,7 @@
 import "./App.css";
 import AboutComp from "./components/about/About";
 import About from "./pages/About";
+import Corusel from "./pages/Corusel";
 import Final from "./pages/Final";
 
 import Home from "./pages/Home";
@@ -12,7 +13,7 @@ function App() {
     <div className="  bg-white w-full">
       <Home />
       <QuestionPage />
-
+      <Corusel />
       <Client />
       <AboutComp />
       <Final />
