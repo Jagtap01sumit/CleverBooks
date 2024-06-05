@@ -38,8 +38,22 @@ export default function Navbar() {
   const ClickLoginBtn = () => {
     console.log("Click Login Button");
   };
+
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-150px";
+    }
+    prevScrollpos = currentScrollPos;
+  };
   return (
-    <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100 bg-transparent  ">
+    <nav
+      id="navbar"
+      className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-75  transition-all duration-300 "
+    >
       <div className="flex flex-row container lg:py-2 flex-wrap items-center justify-between mx-auto lg:px-32 py-2 text-white px-4">
         <div>Logo</div>
         <div className=" mobile-menu block lg:hidden">
