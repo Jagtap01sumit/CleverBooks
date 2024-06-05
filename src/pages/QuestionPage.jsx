@@ -25,7 +25,7 @@ export default function QuestionPage() {
     },
   ];
   return (
-    <div className="h-screen bg-white md:px-32 px-10 pt-[120px] pb-[120px]">
+    <div className=" h-min-screen bg-white md:px-32 px-10 pt-[120px] pb-[120px]">
       <div className="flex items-center justify-center mb-20">
         <h1 className="font-bold text-xl md:text-5xl ">
           Four key questions answered by Crest

@@ -34,12 +34,12 @@ export default function Client() {
   ];
 
   return (
-    <div className="bg-white h-20">
+    <div className="bg-white h-20 m-5 my-10">
       <div>
         <Marquee direction="left" speed={200}>
           {srcArray.map((item, index) => (
             <div key={index} className=" p-2 ">
-              <img src={item} className="img-fluid w-28 h-28 mx-10" />
+              <img src={item} className=" w-28 h-28 mx-10" />
             </div>
           ))}
         </Marquee>
