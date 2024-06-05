@@ -47,8 +47,7 @@ export default function Carousel() {
         className="relative lg:px-20 px-5 w-full "
         data-carousel="static"
       >
-        <div className="relative h-96 flex text-black overflow-hidden rounded-lg border border-black p-5">
-          {/* <div className="border border-red"> */}
+        <div className="relative h-96 flex text-black overflow-hidden rounded-lg border border-black shadow-md p-5">
           {contentArray.map((item, index) => (
             <div
               key={index}
@@ -70,7 +69,6 @@ export default function Carousel() {
               </div>
             </div>
           ))}
-          {/* </div> */}
         </div>
         <button
           type="button"

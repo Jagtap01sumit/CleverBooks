@@ -3,6 +3,7 @@ import AboutComp from "./components/about/About";
 import About from "./pages/About";
 import Corusel from "./pages/Corusel";
 import Final from "./pages/Final";
+import Footer from "./pages/Footer";
 
 import Home from "./pages/Home";
 import QuestionPage from "./pages/QuestionPage";
@@ -17,6 +18,7 @@ function App() {
       <Client />
       <AboutComp />
       <Final />
+      <Footer />
     </div>
   );
 }
