@@ -1,6 +1,7 @@
 import "./App.css";
 import AboutComp from "./components/about/About";
 import About from "./pages/About";
+import Carousel from "./pages/Carousel";
 import Corusel from "./pages/Corusel";
 import Final from "./pages/Final";
 import Footer from "./pages/Footer";
@@ -17,6 +18,7 @@ function App() {
       <Corusel />
       <Client />
       <AboutComp />
+      <Carousel />
       <Final />
       <Footer />
     </div>

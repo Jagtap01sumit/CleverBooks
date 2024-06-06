@@ -55,7 +55,7 @@ export default function Navbar() {
       className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-75  transition-all duration-300 "
     >
       <div className="flex flex-row container lg:py-2 flex-wrap items-center justify-between mx-auto lg:px-32 py-2 text-white px-4">
-        <div>Logo</div>
+        <h1 className="font-bold">CleverBooks</h1>
         <div className=" mobile-menu block lg:hidden">
           {!navbarOpen ? (
             <button

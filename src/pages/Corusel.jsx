@@ -41,7 +41,7 @@ export default function Carousel() {
   };
 
   return (
-    <div className="lg:px-32 lg:py-10">
+    <div className="lg:px-32 lg:py-10 bg-gray-50 h-[500px] md:h-[600px] flex items-center">
       <div
         id="controls-carousel"
         className="relative lg:px-20 px-5 w-full "

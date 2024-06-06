@@ -12,12 +12,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-wrap justify-between items-start mb-12">
           <div className="w-full lg:w-1/4 mb-8 lg:mb-0">
-            {/* <img
-              src="https://cdn.prod.website-files.com/639b3e775b326dcf7cea3e70/639b3e775b326df120ea3eb2_logo-white.svg"
-              alt="Crest Logo"
-              className="h-16 mb-4"
-            /> */}
-            LOGO
+            <h1 className="font-bold text-2xl mb-3">CleverBooks</h1>
             <p className="text-md pt-6 ">
               Crest is an AI-powered supply chain software that provides
               companies tools for demand forecasting, inventory planning and
