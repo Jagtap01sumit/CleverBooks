@@ -15,11 +15,9 @@ html {
 .bg-hero {
   background-image: url('https://cdn.prod.website-files.com/639b3e775b326dcf7cea3e70/639b3e775b326d7eb5ea3efb_home-hero-bg.svg');
   background-size: cover;
-  /* Adjust as needed */
   background-repeat: no-repeat;
-  /* Adjust as needed */
   background-position: center;
-  /* Adjust as needed */
+
 }
 
 .element {
